@@ -1,0 +1,12 @@
+---
+# tasks file for Install-packages
+
+- name: Test proxmox
+  ansible.builtin.import_tasks: task_1_preinit.yml
+  
+- name: Install package
+  ansible.builtin.import_tasks: task_2_install.yml
+
+- name: Configure chrony
+  ansible.builtin.import_tasks: task_3_chrony.yml
+ 

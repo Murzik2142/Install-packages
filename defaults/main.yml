@@ -1,0 +1,9 @@
+---
+# defaults file for Install-packages
+packages_to_install:
+  - chrony
+  - git
+  - curl
+ntp_servers: 
+  - "pool.ntp.org"
+timezone: "Europe/Moscow" 
